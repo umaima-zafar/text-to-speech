@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, white, rgba(172, 255, 47, 0.537));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    color: black;
+    text-align: center;
+}
+
+span {
+    color: rgb(1, 106, 1);
+    border-bottom: 3px solid rgb(1, 106, 1);
+}
+
+textarea {
+    width: 80%;
+    height: 45%;
+    background: rgba(172, 255, 47, 0.734);
+    color: black;
+    padding: 15px;
+    border: none;
+    outline: none;
+    resize: none;
+    border-radius: 15px;
+}
+
+textarea::placeholder {
+    color: black;
+}
+
+.options {
+    display: flex;
+    gap: 26px;
+    width: 79%;
+}
+
+button {
+    width: 20%;
+    background-color: green;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 0;
+    outline: 0;
+    color: white;
+    cursor: pointer;
+}
+
+select {
+    width: 70%;
+    background-color: rgba(172, 255, 47, 0.537);
+    border-radius: 20px;
+    color: black;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    appearance: none;
+    background-image: url(drop.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: calc(100% - 15px);
+    background-position-y: 11px;
+    cursor: pointer;
+}
+
+select::-webkit-scrollbar {
+    width: 8px;
+}
+
+select::-webkit-scrollbar-track {
+    border-radius: 25px;
+}
+
+select::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+select option {
+    background-color: rgb(195, 255, 134);
+}
+
+@media(max-width: 1040px) {
+
+    .options {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    textarea {
+        width: 250px;
+    }
+
+    select {
+        width: 250px;
+    }
+
+    button {
+        width: 100px;
+    }
+
+}
